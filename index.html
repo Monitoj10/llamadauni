@@ -2,18 +2,6 @@
 <html>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        // Previene la visualización de la URL en la barra de estado al pasar el cursor por encima
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('a');
-            links.forEach(link => {
-                link.addEventListener('mouseover', function(event) {
-                    // Establece un título vacío para evitar que se muestre la URL
-                    event.target.title = '';
-                });
-            });
-        });
-    </script>
     <title>Ejemplo Responsivo</title>
     <style>
         /* Estilos generales */
@@ -108,6 +96,18 @@
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+      <script>
+        // Previene la visualización de la URL en la barra de estado al pasar el cursor por encima
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('mouseover', function(event) {
+                    // Establece un título vacío para evitar que se muestre la URL
+                    event.target.title = '';
+                });
+            });
+        });
+    </script>
  <a href="https://www.example.com" onclick="event.preventDefault();"/>
  <elevenlabs-convai agent-id="FVTxUiLXvq4vQAvbtR8o"></elevenlabs-convai>
   <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
